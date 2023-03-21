@@ -1,3 +1,4 @@
+# 1. k8s deploy / alpine linux image with aws-cli 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -27,6 +28,7 @@ spec:
                 command: ["/bin/sh", "-c", "apk add --no-cache aws-cli"]
 
 ---
+# 2. k8s service account
 apiVersion: v1
 kind: ServiceAccount
 metadata:
